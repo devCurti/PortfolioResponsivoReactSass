@@ -1,0 +1,40 @@
+@use '../variables'
+@use '../mixins'
+
+        
+
+
+#projects
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    align-content: center
+    width: 100%
+
+    svg
+        font-size: 6rem
+
+    a
+        text-decoration: none
+
+#title
+    color: variables.$text-color
+    margin-bottom: 1.3rem
+    gap: 1rem
+    @include mixins.center
+    
+    
+    &::after
+        content: ""
+        background: variables.$gradient
+        height: 2px
+        width: 30%
+
+    &::before
+        content: ""
+        background: variables.$gradient
+        height: 2px
+        width: 30%
+        
+    
