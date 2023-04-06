@@ -1,5 +1,3 @@
-import '../../styles/components/aboutContainer.sass'
-
 function aboutContainer(){
     return(
         <section id="about-container">
